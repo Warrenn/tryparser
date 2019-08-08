@@ -83,7 +83,7 @@ public static class TryParser
     }
 
 
-    public static DateTime? DateTime(object value, string[] formats = null)
+    public static DateTime? DateTime(object value, params string[] formats)
     {
         if (value is DateTime)
         {
@@ -94,25 +94,22 @@ public static class TryParser
         {
             return null;
         }
-        if (formats == null)
+        if (formats == null || formats.Length == 0)
         {
             formats = Formats;
         }
 
-        DateTime date;
-
         if (System.DateTime.TryParseExact(
             stringValue, formats,
             CultureInfo.InvariantCulture,
-            DateTimeStyles.None, out date))
+            DateTimeStyles.None, out var date))
         {
             return date;
         }
 
         date = new DateTime(1899, 12, 30);
 
-        double doubleValue;
-        if (double.TryParse(stringValue, out doubleValue) &&
+        if (double.TryParse(stringValue, out var doubleValue) &&
             (doubleValue <= 2958465) &&
             (doubleValue >= -693593))
         {

@@ -95,7 +95,7 @@ namespace tests
         public void DateTimeMustWorkWithDDMMYYYDashFormat()
         {
             //Arrange+Act
-            var result = TryParser.DateTime("13-05-2013");
+            var result = TryParser.DateTime("13-05-2013","dd-MM-yyyy");
             //Assert
             Assert.AreEqual(new DateTime(2013, 5, 13), result);
         }
