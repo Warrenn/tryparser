@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tests", "tests\tests.csproj", "{D31BD3F3-3106-481C-A810-CD0BC600216A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tryparser", "src\tryparser\tryparser.csproj", "{DDE4FC54-B61A-417B-B35E-9284FF05098C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D31BD3F3-3106-481C-A810-CD0BC600216A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D31BD3F3-3106-481C-A810-CD0BC600216A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D31BD3F3-3106-481C-A810-CD0BC600216A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D31BD3F3-3106-481C-A810-CD0BC600216A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DDE4FC54-B61A-417B-B35E-9284FF05098C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DDE4FC54-B61A-417B-B35E-9284FF05098C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DDE4FC54-B61A-417B-B35E-9284FF05098C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DDE4FC54-B61A-417B-B35E-9284FF05098C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
